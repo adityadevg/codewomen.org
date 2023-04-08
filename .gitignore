@@ -1,0 +1,5 @@
+# Hidden files and folders except .gitignore
+.*
+!/.gitignore
+
+.DS_Store
