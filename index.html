@@ -20,7 +20,14 @@
           "mode": "sandbox",});
     }
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6SJRS362W"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=${{ secrets.GOOGLE_ANALYTICS_GTAG }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '${{ secrets.GOOGLE_ANALYTICS_GTAG }}');
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -48,47 +55,19 @@
     <div id="banner-carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#banner-carousel" data-slide-to="1"></li>
-        <li data-target="#banner-carousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="assets/img/banner1.jpg" alt="Code Women Banner Image" style="width:100%">
-          <div class="carousel-caption">
+          <img src="assets/img/banner.jpeg" alt="Code Women Banner Image" style="width:100%; opacity:0.2;">
+          <div class="rounded border bg-dark p-3 carousel-caption" style="background-color:rgba(80,80,80, 0.5);">
             <div class="mask">
               <div class="d-flex justify-content-center text-center align-items-center h-100">
-                <div class="text-bg-info p-3">
+                <div class="text-bg-info">
                   <h1 class="mb-3">Code Women</h1>
                   <h4 class="mb-3">Empowering Women of Colour in Tech</h4>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/img/banner2.jpg" alt="Code Women Banner Image" style="width:100%">
-          <div class="carousel-caption">
-            <div class="mask">
-              <div class="d-flex justify-content-center text-center align-items-center h-100">
-                <div class="text-bg-info p-3">
-                  <h1 class="mb-3">Browse our Programs</h1>
-                  <h4 class="mb-3">Empowering Women of Colour in Tech</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="item">
-          <img src="assets/img/banner3.jpg" alt="Code Women Banner Image" style="width:100%">
-          <div class="carousel-caption">
-           <div class="mask">
-             <div class="d-flex justify-content-center text-center align-items-center h-100">
-               <div class="text-bg-info p-3 ">
-                 <h1 class="mb-3">Mentoring</h1>
-                 <h4 class="mb-3">Empowering Women of Colour in Tech</h4>
-               </div>
-             </div>
-           </div>
           </div>
         </div>
       </div>
@@ -110,6 +89,9 @@
             <h4 class="mb-3">
               Join our community of women who are passionate about technology and making a difference
             </h4>
+          </div>
+          <div class="container">
+            <img src="assets/img/body.jpeg" style="width:100%">
           </div>
         </div>
       </div>
@@ -218,7 +200,7 @@
                   <textarea class="form-control" id="message" placeholder="Message" name="message" required></textarea>
                 </div>
               </div>
-              <div class="form-group">        
+              <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                   <button type="submit" class="btn btn-default">Submit</button>
                 </div>
@@ -236,16 +218,52 @@
           <button type="submit" id="miniBrowserInitiateCheckout"
           class="btn btn-lg btn-primary btn-block"
           onclick=" initiateCheckout(); return false;">
+            Airwallex Checkout Placeholder
+          </button>
+        </div>
+        <div class="container">
+          <h2 class="mb-3">Donate</h2>
+          <div id="ppplus">
+          </div>
+          <button type="submit" id="miniBrowserInitiateCheckout"
+          class="btn btn-lg btn-primary btn-block"
+          onclick=" initiateCheckout(); return false;">
             PayPal Checkout Placeholder
+          </button>
+        </div>
+        <div class="container">
+          <h2 class="mb-3">Donate</h2>
+          <div id="ppplus">
+          </div>
+          <button type="submit" id="miniBrowserInitiateCheckout"
+          class="btn btn-lg btn-primary btn-block"
+          onclick=" initiateCheckout(); return false;">
+            Stripe Checkout Placeholder
+          </button>
+        </div>
+        <div class="container">
+          <h2 class="mb-3">Donate</h2>
+          <div id="ppplus">
+          </div>
+          <button type="submit" id="miniBrowserInitiateCheckout"
+          class="btn btn-lg btn-primary btn-block"
+          onclick=" initiateCheckout(); return false;">
+            Square Checkout Placeholder
           </button>
         </div>
       </div>
     </div>
-
     <!-- Footer -->
-    <footer class="navbar navbar-default navbar-fixed-bottom">
-      <nav class="navbar fixed-bottom navbar-light bg-light">
-        <p class="navbar-brand">&copy; 2023 Code Women Website</p>
+    <footer class="navbar navbar-default">
+      <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-light">
+        <div class="mask">
+          <div class="d-flex justify-content-center text-right align-items-center h-100">
+            <div class="text-bg-info p-3">
+              <img src="assets/img/footer.jpeg" alt="Code Women Footer Image" style="width:100%">
+              &copy; 2023 Code Women Website
+            </div>
+          </div>
+        </div>
       </nav>
     </footer>
   </body>
