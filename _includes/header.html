@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            {% for page in site.data.sitetext[site.locale].body %}
+                <li class="nav-item col-xs-12 col-md-3">
+                    <a class="nav-link page-scroll" href="{{ page.section | prepend: '#'  | prepend: site.baseurl }}"> {{page.name}} </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+<header>
+    <img src="{{ 'assets/img/background/header-bg.png' | prepend: site.baseurl }}">
+    <div class="container">
+        <div class="row intro-text">
+            <div class="intro-lead-in">{{site.data.sitetext[site.locale].header.title}}</div>
+            <div class="intro-heading">{{site.data.sitetext[site.locale].header.motto}}</div>
+            <div class="intro-subheading">{{site.data.sitetext[site.locale].header.description}}</div>
+        </div>
+    </div>
+</header>

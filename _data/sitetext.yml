@@ -1,0 +1,379 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: CodeWomen
+    motto: Empowering women of colour
+    description: Join our community of women who are passionate about technology and making a difference
+
+  body:
+    - name: About
+      background: assets/img/background
+      title: "OUR AMAZING TEAM"
+      description: "Meet our volunteers who are passionate about making a difference"
+      section: about
+      people:
+        - name: "Vinrose Naluyange"
+          role: "Founder & Coach"
+          image: assets/img/about/VinroseNaluyange.jpg
+          social:
+            - url: https://www.linkedin.com/in/vinrosen
+              icon: linkedin
+        - name: "Aditya Dev"
+          role: "Web Developer & Coach"
+          image: assets/img/about/AdityaDev.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/adityadev
+              icon: linkedin
+            - url: https://github.com/adityadevg
+              icon: github
+        - name: "Jithya"
+          role: "Project Seniors Lead"
+          image: assets/img/about/Jithya.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/
+              icon: linkedin
+            - url: https://github.com/
+              icon: github
+        - name: "ABC"
+          role: "Hello?"
+          image: assets/img/about/ABC.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/
+              icon: linkedin
+            - url: https://github.com/
+              icon: github
+
+    - name: Projects
+      title: "Projects"
+      description: "Check out some of our ongoing initiatives"
+      section: projects
+      list:
+        - title: "Project CodeWomen"
+          description: "Empowering women of colour"
+        - title: "Project Downtown Innocence"
+          description: "Helping fight homelessness in the city of Toronto"
+        - title: "Project Seniors"
+          description: "Reaching out to take care of elderly needs"
+        - title: "Project Newcomers"
+          description: "Supporting Canadian immigrants before and after their move"
+
+    - name: Partners
+      title: "Partners"
+      description: "Meet our partners who believe in our projects"
+      section: partners
+      list:
+        - title: "City of Toronto"
+          url: https://www.toronto.ca/business-economy/partnerships-sponsorships-donations/partner-2/our-partners
+          logo: https://www.toronto.ca/wp-content/themes/cot/img/logo.svg
+        - title: "The Neighbourhood Group"
+          url: https://tngcommunityto.org/About-Us/Partners
+          logo: https://tngcommunityto.org/TNG/media/images/logos/logo_full_tng.svg
+        - title: "SunLife"
+          url: https://www.sunlife.com/en/about-us/who-we-are/donations-and-partnerships
+          logo: https://www.sunlife.com/content/dam/sunlife/regional/global-marketing/images/com/Sun_Life_weblogo_127x31.svg
+        - title: "QED Battery"
+          url: https://qedbattery.com
+          logo: https://qedbattery.com/wp-content/uploads/2022/01/cropped-LOGO-122x122.png
+        - title: "Camara Corp"
+          url: https://camara.godaddysites.com
+          logo: 
+        - title: "UNICEF - Canada"
+          url: https://www.unicef.ca/en/our-partners
+          logo: https://www.unicef.ca/themes/custom/unicef2017/images/logo.png
+
+    - name: Contact
+      title: "Contact Us"
+      description: "We'll get back to you within 24 hours"
+      section: contact
+      form-name: "Name*"
+      form-name-validation: "Please enter your name."
+      form-email: "Email*"
+      form-email-validation: "Please enter your email address."
+      form-phone: "Phone Number"
+      form-phone-validation: "Please enter your phone number."
+      form-message: "Message*"
+      form-message-validation: "Please enter a message."
+      form-subject: "Contact Form Submission"
+      form-submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com
+        icon: "twitter"
+      - url: https://facebook.com
+        icon: "facebook-f"
+      - url: https://linkedin.com
+        icon: "linkedin"
+      - url: https://github.com/
+        icon: "github"
+      - url: https://instagram.com
+        icon: "instagram"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# French
+# -------
+fr: &DEFAULT_FR
+  header:
+    title: CodeWomen
+    motto: 
+    description: 
+    button: 
+
+  body:
+    - name: Propos
+      background: assets/img/background
+      title: ""
+      description: ""
+      section: propos
+      people:
+        - name: "Vinrose Naluyange"
+          role: "Founder & Coach"
+          image: assets/img/about/VinroseNaluyange.jpg
+          social:
+            - url: https://www.linkedin.com/in/vinrosen
+              icon: linkedin
+        - name: "Aditya Dev"
+          role: "Web Developer & Coach"
+          image: assets/img/about/AdityaDev.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/adityadev
+              icon: linkedin
+            - url: https://github.com/adityadevg
+              icon: github
+        - name: "Jithya"
+          role: "Seniors Project Lead"
+          image: assets/img/about/Jithya.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/
+              icon: linkedin
+            - url: https://github.com/
+              icon: github
+        - name: "ABC"
+          role: "Hello?"
+          image: assets/img/about/ABC.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/
+              icon: linkedin
+            - url: https://github.com/
+              icon: github
+
+    - name: Projets
+      title: "Projets"
+      description: "Rencontrez nos bénévoles passionnés par le fait de faire une différence"
+      section: projets
+      list:
+        - title: "Projet CodeWomen"
+          description: "Donner aux femmes de couleur le pouvoir"
+        - title: "Projet Innocence du centre-ville"
+          description: "Aider à lutter contre l'itinérance dans la ville de Toronto"
+        - title: "Projet Aînés"
+          description: "Prendre soin des personnes âgées pour répondre à leurs besoins"
+        - title: "Projet Nouveaux Arrivants"
+          description: "Soutenir les immigrants canadiens avant et après leur déménagement"
+          
+    - name: Partenaires
+      section: partenaires
+      list:
+        - title: "Ville de Toronto"
+          url: https://www.toronto.ca/business-economy/partnerships-sponsorships-donations/partner-2/our-partners
+          logo: https://www.toronto.ca/wp-content/themes/cot/img/logo.svg
+        - title: "Le Groupe de Quartier"
+          url: https://tngcommunityto.org/About-Us/Partners
+          logo: https://tngcommunityto.org/TNG/media/images/logos/logo_full_tng.svg
+        - title: "SunLife"
+          url: https://www.sunlife.com/en/about-us/who-we-are/donations-and-partnerships
+          logo: https://www.sunlife.com/content/dam/sunlife/regional/global-marketing/images/com/Sun_Life_weblogo_127x31.svg
+        - title: "QED Battery"
+          url: https://qedbattery.com
+          logo: https://qedbattery.com/wp-content/uploads/2022/01/cropped-LOGO-122x122.png
+        - title: "Camara Corp"
+          url: https://camara.godaddysites.com
+          logo: 
+        - title: "UNICEF - Canada"
+          url: https://www.unicef.ca/en/our-partners
+          logo: https://www.unicef.ca/themes/custom/unicef2017/images/logo.png
+
+    - name: Contactez
+      title: "Contactez"
+      description: "Lorem Ipsum"
+      section: contactez
+      name: "*"
+      name-validation: ""
+      email: "*"
+      email-validation: ""
+      phone: ""
+      phone-validation: ""
+      message: ""
+      message-validation: ""
+      subject: ""
+      submit: ""
+
+  footer:
+    legal: ""
+    social:
+      - url: https://twitter.com
+        icon: "twitter"
+      - url: https://facebook.com
+        icon: "facebook-f"
+      - url: https://linkedin.com
+        icon: "linkedin"
+      - url: https://instagram.com
+        icon: "instagram"
+fr-FR:
+  <<: *DEFAULT_FR
+fr-CA:
+  <<: *DEFAULT_FR
+fr-BE:
+  <<: *DEFAULT_FR
+fr-CH:
+  <<: *DEFAULT_FR
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  header:
+    title: CodeWomen
+    motto: 
+    description: 
+    button: 
+
+  body:
+    - name: Sobre nosotros
+      title: "NUESTRO INCREÍBLE EQUIPO"
+      description: "Conozca a nuestros voluntarios apasionados por marcar la diferencia"
+      subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+      section: sobre
+      people:
+        - name: "Vinrose Naluyange"
+          role: "Founder & Coach"
+          image: assets/img/about/VinroseNaluyange.jpg
+          social:
+            - url: https://www.linkedin.com/in/vinrosen
+              icon: linkedin
+        - name: "Aditya Dev"
+          role: "Web Developer & Coach"
+          image: assets/img/about/AdityaDev.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/adityadev
+              icon: linkedin
+            - url: https://github.com/adityadevg
+              icon: github
+        - name: "Jithya"
+          role: "Seniors Project Lead"
+          image: assets/img/about/Jithya.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/
+              icon: linkedin
+            - url: https://github.com/
+              icon: github
+        - name: "ABC"
+          role: "Hello?"
+          image: assets/img/about/ABC.jpg
+          social:
+            - url: https://twitter.com
+              icon: twitter
+            - url: https://linkedin.com/in/
+              icon: linkedin
+            - url: https://github.com/
+              icon: github
+
+    - name: Proyectos
+      title: "Proyectos"
+      description: "Conozca a nuestros voluntarios apasionados por hacer la diferencia"
+      section: proyectos
+      list:
+        - title: "Proyect CodeWomen"
+          description: "Empoderar a mujeres de color"
+        - title: "Proyect Inocencia céntrica"
+          description: "Ayudando a combatir la falta de vivienda en la ciudad de Toronto"
+        - title: "Proyect Ancianos"
+          description: "Extender la mano para atender las necesidades de las personas mayores"
+        - title: "Proyect Recién llegados"
+          description: "Apoyando a los inmigrantes canadienses antes y después de su mudanza"
+
+    - name: Asociado
+      section: asociado
+      list:
+        - title: "Ciudad de Toronto"
+          url: https://www.toronto.ca/business-economy/partnerships-sponsorships-donations/partner-2/our-partners
+          logo: https://www.toronto.ca/wp-content/themes/cot/img/logo.svg
+        - title: "El Grupo Vecinal"
+          url: https://tngcommunityto.org/About-Us/Partners
+          logo: https://tngcommunityto.org/TNG/media/images/logos/logo_full_tng.svg
+        - title: "SunLife"
+          url: https://www.sunlife.com/en/about-us/who-we-are/donations-and-partnerships
+          logo: https://www.sunlife.com/content/dam/sunlife/regional/global-marketing/images/com/Sun_Life_weblogo_127x31.svg
+        - title: "QED Battery"
+          url: https://qedbattery.com
+          logo: https://qedbattery.com/wp-content/uploads/2022/01/cropped-LOGO-122x122.png
+        - title: "Camara Corp"
+          url: https://camara.godaddysites.com
+          logo: 
+        - title: "UNICEF - Canada"
+          url: https://www.unicef.ca/en/our-partners
+          logo: https://www.unicef.ca/themes/custom/unicef2017/images/logo.png
+
+    - name: Contáctenos
+      title: "Contáctenos"
+      description: "Lorem ipsum or call 123456789"
+      section: contáctenos
+      name: "Nombre*"
+      name-validation: "Por favor ingrese su nombre."
+      email: "Correo Electrónico*"
+      email-validation: "Por favor ingrese su correo electrónico."
+      phone: "Número Telefónico*"
+      phone-validation: "Por favor ingrese su número telefónico."
+      message: "Mensaje*"
+      message-validation: "Por favor escriba un mensaje."
+      subject: "Envío del formulario de contacto"
+      submit: "Enviar Mensaje"
+
+  footer:
+    legal: "Política de Privacidad"
+    social:
+      - url: https://twitter.com
+        icon: "twitter"
+      - url: https://facebook.com
+        icon: "facebook-f"
+      - url: https://linkedin.com
+        icon: "linkedin"
+      - url: https://instagram.com
+        icon: "instagram"
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
