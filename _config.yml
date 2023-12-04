@@ -38,7 +38,7 @@ plugins:
 #
 
 analytics:
-  google: #Google Analytics tracking code here
+  google: GOOGLE_ANALYTICS_GTAG
 
 collections:
   portfolio:
